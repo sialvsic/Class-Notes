@@ -1,0 +1,20 @@
+﻿1.如何确定需求调研  ？   
+在项目需求调研时，我们分为 Ask、Listen、Confirm三个阶段
+
+Listen:  确定客户说的fact，feel,focus
+ask:   根据听到的   问客户close  open的问题      从要求 转变为需求
+confirm: 确认需求是不是客户想要的
+将用户的feel转化为很多的fact，然后再找出用户的关注点，在拆分出很多的	fact，询问用户的feel
+根据客户的feel转化为对个fact,并找到客户focus,并根据客户的关注点再转化为多个fact,并询问客户对此方案的感觉
+
+是一种 总分总的结构 ：
+
+feel   →  fact fact fact → focus →  fact fact fact →  feel
+
+2.敏捷团队的五个角色？
+
+PM  项目管理
+BA  业务分析
+UX    
+QA  
+DEV  

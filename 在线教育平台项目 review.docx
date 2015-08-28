@@ -1,0 +1,16 @@
+﻿2015.08.24
+1.冲突处理
+使用 git pull --rebase  pull之后的代码可能存在冲突的问题
+在这里需要注意，对于冲突
+删除完<<<<<<<<<<<
+==========
+>>>>>>>>>>>>>
+手动解决完冲突之后，仅需要执行  git add 命令  +  git rebase --continue 即可   不需要在git add 之后执行 git commit 命令
+2015.08.25
+
+2015.08.26
+1.不要过度的设计无意义的数据过滤
+2.在ORM中 可以使用 对象.belongsTO   对象.hasMany 的方法 获取相关对象
+3.约定优于配置
+4.在querystring 中优先使用 pageSize  和  pageIndex
+5.
