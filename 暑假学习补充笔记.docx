@@ -3,4 +3,54 @@
 2.序列化     对象转化为  文本
   反序列化    文本转化为对象
 3.推荐使用链式调用  
-4.
+4.模块编程
+传统:   一次性全部加载
+A.  commonjs  
+	CMD 风格  异步加载     nodejs  环境友好
+B.  requirejs
+ 	AMD 风格    浏览器环境友好
+C. 	ES6 
+
+三者的语法不同，为解决统一性的问题   →   JSPM
+5.加载javascript 的文件  使用
+var  xx 类名  =  require ('path');
+定义 module 
+ module.exports = xx ;
+ exports.xx = xx;
+两种方式的区别？
+6.命令行调试js 代码 
+使用 node debug  命令选择 要执行的js 文件， 
+eg：  node debug main.js 
+使用 debug → repl 进入调试模式
+7.一次 http请求的过程？
+Client   →(客户端发起请求)    DNS解析   →  (三次握手，四次挥手) →   server  →
+(server 进行后端的处理)   →   response （resource ）  →    解析资源后呈现
+
+8.request 内部的细节 
+http是无状态的   建立一次连接后  over 
+使用 session  和  cookie  可以 使http 的无状态变为有状态 (假象，仅仅为了保持维持会话) →
+cookie   client端     (一般的大小于 4k)  http 的附加部分  会存储一个用户的key，每次附带上这个key可以进行用户身份的认证
+session  web端  每一个用户建立一个session相当于一个模块 单独处理  ，也存在一个  key
+9.reuqest 类型
+http method  
+get  (请求信息)  附加到URL上 通过 query string ，会有长度的限制，主要起查询的作用
+post (提交信息)  将form 信息放在http body中
+10.明文 ：   指未被加密过的  ，http本身就是明文  但是  https 是加密过的
+11.respose的类型
+使用3位的状态码来标识
+1xx 
+2xx 成功信息
+3xx 转发信息
+4xx 请求失败
+5xx 服务器错误
+12.CURD 与 http require and  response
+get    →    Read
+post   →    Create
+put    →    Update
+delete →    Delete
+
+13.DEV 的区分  
+Front-end             Full-stack                 DevOps
+前端		                全栈			             开发自运维
+14.创建一个 index.html 的文件  使用  live-server 可以自动刷新
+15.
